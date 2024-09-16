@@ -1,0 +1,112 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da viewport */
+}
+
+.App {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Títulos principais */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+/* Estilização dos componentes */
+.component-container {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Botões */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Centralização e espaçamento */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  width: 100%;
+}
+
+/* Espaço entre seções de exemplos */
+h2 + .component-container {
+  margin-top: 20px;
+}
+
+/* Estilo de console de saída para exibir mensagens */
+.console-output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #495057;
+}
+
+/* Exemplo de foco e desfoque */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input:blur {
+  border-color: #ccc;
+}
